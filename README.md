@@ -1,16 +1,65 @@
-# React + Vite
+Forever | Modern E-Commerce Platform
+Forever is a fully responsive, feature-rich e-commerce application designed for a seamless shopping experience. Built with React and styled with Tailwind CSS, it offers a clean, modern UI for browsing collections, managing a cart, and processing orders.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+Dynamic Product Catalog: Browse products with categories and sub-category filtering.
+Advanced Search: Real-time search functionality across the entire collection.
+Product Detail View: Detailed product descriptions, size selection, and related product suggestions.
+Cart Management: Add to cart, update quantities, and remove items with persistent state via Context API.
+Checkout System: A multi-step checkout process including delivery information and payment method selection (Stripe, Razorpay, COD).
+Order Tracking: View and track order history with status updates.
+Authentication UI: Dedicated Sign Up and Login pages.
+Responsive Design: Optimized for mobile, tablet, and desktop screens using Tailwind CSS.
+Toasts Notifications: Real-time feedback for user actions (e.g., adding to cart) using react-toastify.
+🛠️ Tech Stack
+Frontend: React.js
+Styling: Tailwind CSS
+Routing: React Router DOM
+State Management: React Context API
+Icons & Assets: Custom assets and Lucide-like icon integrations.
+Notifications: React Toastify
+📦 Installation
+To get a local copy up and running, follow these steps:
 
-Currently, two official plugins are available:
+Clone the repository
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+bash
+git clone https://github.com/your-username/forever-ecommerce.git
+cd forever-ecommerce/frontend
+Install dependencies
 
-## React Compiler
+bash
+npm install
+Start the development server
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+bash
+npm run dev
+Open the browser Navigate to http://localhost:5173 (or the port specified by Vite).
 
-## Expanding the ESLint configuration
+📂 Project Structure
+text
+ Show full code block 
+src/
+├── assets/             # Images and static files
+├── components/         # Reusable UI components (Navbar, Footer, SearchBar, etc.)
+├── context/            # ShopContext for global state management
+├── pages/              # Page components (Home, Collection, Cart, Product, etc.)
+├── App.jsx             # Main routing and application layout
+└── main.jsx            # Application entry point
+📸 Preview
+(Add screenshots or a GIF of your project here to make it more appealing!)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Home Page: Featured and Latest collections.
+Collection Page: Sidebar filters for Men, Women, and Kids.
+Product Page: High-quality images with size selection.
+Cart: Summary of selected items and total calculation.
+🤝 Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+Fork the Project.
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+Push to the Branch (git push origin feature/AmazingFeature).
+Open a Pull Request.
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
